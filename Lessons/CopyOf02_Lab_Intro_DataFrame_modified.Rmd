@@ -6,7 +6,7 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE) #echo = true shows that all code chunks will be run when you generate a report
 ```
 
 ## Data frame definition
@@ -20,8 +20,11 @@ When we import data to R, data frame is the preferred way for storing the data b
 
 Let's look into a built-in data frame from package "datasets" - cars. The data give the speed of cars and the distances taken to stop.
 
-```{r cars}
+```{r cars} 
 cars
+```
+```{r you can add names here to the code chunk}
+
 ```
 
 
@@ -49,16 +52,16 @@ car_speed
 Is the new object you create a data frame?
 ```{r}
 #Option 1
-class(car_speed)
+class(car_speed) #this is a method to check if the object is a data frame
 
 #Option 2
-is.data.frame(car_speed)
+is.data.frame(car_speed) #this is a method to check if the object is a data frame
 ```
 
 How could you make it a data frame?
 
 ```{r}
-df_car_speed <- as.data.frame(car_speed)
+df_car_speed <- as.data.frame(car_speed) #use the 'df' or 'data frame' function
 df_car_speed
 class(df_car_speed)
 ```
@@ -71,12 +74,12 @@ How could you add columns to *df_car_speed*?
 car_dist <- cars$dist
 
 #Option 1
-df <- cbind(df_car_speed,car_dist)  #similarly rows could be added using rbind()
+df <- cbind(df_car_speed,car_dist)  #similarly rows could be added using rbind()  cbind stands for column bind... puts columns side by side. must have same number of rows to use this
 class(df)
 df
 
 #Or Option 2 - transform into a data frame before binding
-df_car_dist <- as.data.frame(car_dist)  #op2
+df_car_dist <- as.data.frame(car_dist)  #op2 usually a good idea to convert to df first because sometimes will not be binding to the df or columns
 df_opt2 <- cbind(df_car_speed,df_car_dist)
 class(df_opt2)
 df_opt2
@@ -96,7 +99,7 @@ How would you create a data frame?
 
 ```{r}
 #useful function data.frame()
-create_df <- data.frame("speed"=car_speed,"dist"=car_dist)
+create_df <- data.frame("speed"=car_speed,"dist"=car_dist) #this function creates data frames. can specify the column name
 create_df
 ```
 
