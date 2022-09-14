@@ -2,7 +2,9 @@
 title: "Assignment01"
 author: "Erik_Patton"
 date: "2022-09-14"
-output: pdf_document
+output: 
+  pdf_document: 
+      latex_engine: TRUE
 ---
 
 ```{r setup, include=FALSE}
