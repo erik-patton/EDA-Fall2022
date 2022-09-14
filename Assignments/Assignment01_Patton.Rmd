@@ -8,14 +8,18 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+This word should be **bold**  
+[click here to link to the class Git Hub page](https://github.com/ENV872/EDA-Fall2022)
+
+
 ### My Git settings:
-user.name=erik-patton
+user.name=erik-patton  
 user.email=erik.patton@duke.edu
 
 ### My Git remote settings:
-origin  https://github.com/erik-patton/EDA-Fall2022 (fetch)
-origin  https://github.com/erik-patton/EDA-Fall2022 (push)
-upstream        https://github.com/ENV872/EDA-Fall2022 (fetch)
+origin  https://github.com/erik-patton/EDA-Fall2022 (fetch)  
+origin  https://github.com/erik-patton/EDA-Fall2022 (push)  
+upstream        https://github.com/ENV872/EDA-Fall2022 (fetch)  
 upstream        DISABLE (push)
 
 ### My Git changes:
@@ -36,3 +40,8 @@ f8e24f6 second commit, per instructions
 f992081 Create Assignments folder
 972c063 Create Lessons folder
 34b6cc8 Create .gitignore
+
+---
+### Dad Joke of the Day:
+**What's a pirates favorite coding language?**   
+"Rrrrrr.....!!!"
