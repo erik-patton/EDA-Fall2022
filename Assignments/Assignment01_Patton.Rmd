@@ -8,23 +8,31 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+### My Git settings:
+user.name=erik-patton
+user.email=erik.patton@duke.edu
 
-## R Markdown
+### My Git remote settings:
+origin  https://github.com/erik-patton/EDA-Fall2022 (fetch)
+origin  https://github.com/erik-patton/EDA-Fall2022 (push)
+upstream        https://github.com/ENV872/EDA-Fall2022 (fetch)
+upstream        DISABLE (push)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### My Git changes:
+929be0f (HEAD -> main) Assignment01_first commit
+4d5ecb3 (origin/main, origin/HEAD) saved 14SEP
+6af0f68 output from class #3 12 SEPT
+20a06af my in class modified lab file
+9d09e05 pulling for lab2
+b94f9ee (upstream/main) uploaded Lab2 file
+503ac35 knit lesson 2
+99e0952 small modifications of work done on lesson 2
+2b84a6c Merge branch 'main' of https://github.com/ENV872/EDA-Fall2022
+2342d5a Create 02_Reproducibility_CodingBasics.Rmd
+d74b397 Adds 01_gitExercise.pdf
+f8e24f6 second commit, per instructions
+7527724 Add new GitDemo file
+20a7b70 Add data files
+f992081 Create Assignments folder
+972c063 Create Lessons folder
+34b6cc8 Create .gitignore
