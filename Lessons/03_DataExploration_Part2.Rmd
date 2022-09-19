@@ -83,13 +83,13 @@ ggplot(USGS.flow.data) +
   geom_histogram(aes(x = discharge.mean), bins = 20)
 
 #
-ggplot(USGS.flow.data, aes(x = discharge.mean)) +
+ggplot(USGS.flow.data.complete, aes(x = discharge.mean)) +
   geom_histogram(binwidth = 10) + 
   scale_x_continuous(limits = c(0, 500))
   
 #
-ggplot(USGS.flow.data) +
-  geom_histogram(aes(x = gage.height.mean))
+ggplot(USGS.flow.data.complete) +
+  geom_histogram(aes(x = gage.height.mean) binwidth = 5)
 
 ```
 ### Frequency line graph (function: geom_freqpoly)
@@ -98,11 +98,6 @@ An alternate to a histogram is a frequency polygon graph (distributions of value
 
 ```{r, fig.height = 3, fig.width = 4}
 #
-ggplot(USGS.flow.data) +
-  geom_freqpoly(aes(x = gage.height.mean), bins = 50) +
-  geom_freqpoly(aes(x = gage.height.min), bins = 50, color = "darkgray") +
-  geom_freqpoly(aes(x = gage.height.max), bins = 50,  lty = 2) +
-  scale_x_continuous(limits = c(0, 10))
 
 #
 ggplot(USGS.flow.data) +

@@ -33,7 +33,8 @@ If your working directory is not set to the folder you want, you have several op
 
 ```{r Setting the working directory }
 # Absolute file path is commented out
-setwd("/home/guest/EDA-Fall2022")
+
+# setwd("/home/guest/EDA-Fall2022")
 ```
 
 You may change your working directory without coding by going to the Session menu in RStudio and navigating to the Set Working Directory tab. From there, you may select from a series of options to reset your working directory. 
@@ -117,7 +118,7 @@ Take a moment to read through the README file associated with the USGS dataset o
 > ANSWER: 
 
 ```{r Exploring data}
-View(USGS.flow.data)
+#View(USGS.flow.data)
 # Alternate option: click on data frame in Environment tab
 
 class(USGS.flow.data)
@@ -217,7 +218,7 @@ USGS.flow.data$datetime <- format(USGS.flow.data$datetime, "%y%m%d")
 
 #
 create.early.dates <- (function(d) {
-       paste0(ifelse(d > 191226,"19","20"),d)
+       paste0(ifelse(d > 191226,"19","20"),d) #'paste0' will add a number to something
        })
 #
 USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
@@ -233,7 +234,6 @@ We just edited our raw dataset into a processed form. We may want to return to t
 
 
 ```{r Saving data}
-write.csv(USGS.flow.data, file = "./Data/Processed/USGS_Site02085000_Flow_Processed.csv", row.names=FALSE)
 
 ```
 
