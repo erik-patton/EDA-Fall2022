@@ -86,9 +86,9 @@ summary(Neonics$Effect)
 # Neonics_Test <- c(Neonics$Effect)
 # Neonics$Effect
 table(Neonics$Effect)
-names(which.max(table(Neonics$Effect))) #returns the catagory most common
-print(names(which.max(table(Neonics$Effect))))
-names(which.min(table(Neonics$Effect))) #returns the catagory least common
+names(which.max(table(Neonics$Effect))) #returns the category most common
+#print(names(which.max(table(Neonics$Effect))))
+names(which.min(table(Neonics$Effect))) #returns the category least common
 ```
 
 > Answer:This would help researchers determine what sort of experiments and data have been conducted and if the data set is useful. For example, if the reseracher needs data on hormones, they might want to find a different data set, but if the researcher is looking at population types and mortality, they are likely to be able to use this data frame.
